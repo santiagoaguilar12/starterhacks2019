@@ -15,6 +15,7 @@ body{
     background-color: black;
     color:#30CFD0;
     outline:none;
+    border:none;
 }
 
 .black-on-grey{
@@ -24,4 +25,14 @@ body{
 
 .icon{
     font-size: 2.5rem;
+}
+
+.link{
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #333333;
 }
