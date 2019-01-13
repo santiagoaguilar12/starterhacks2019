@@ -37,9 +37,27 @@ app.get("/user", function(req, res){
     res.send("User Info");
 });
 
-app.get("/:id", function(req, res){
+app.get("/show", function(req, res){
     User.findById(req.params.id,function(err,foundUser){
             res.render("show",{user:foundUser});
+        });  
+});
+
+app.get("/bio", function(req, res){
+    User.findById(req.params.id,function(err,foundUser){
+            res.render("bio",{user:foundUser});
+        });  
+});
+
+app.get("/med", function(req, res){
+    User.findById(req.params.id,function(err,foundUser){
+            res.render("med",{user:foundUser});
+        });  
+});
+
+app.get("/history", function(req, res){
+    User.findById(req.params.id,function(err,foundUser){
+            res.render("history",{user:foundUser});
         });  
 });
 
